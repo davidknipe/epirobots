@@ -10,6 +10,7 @@
     /// </summary>
     internal class RegisterResources : PlugInAttribute
     {
+
         #region Static methods
 
         /// <summary>
@@ -28,10 +29,11 @@
             if (HttpContext.Current == null)
                 return;
 
-            HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/RobotsTxtHandler.ashx", "EPiRobotsTxt.Resources.RobotsTxtHandler.ashx", false));
-            HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/AdminManageRobotsTxt.aspx", "EPiRobotsTxt.Resources.Admin.AdminManageRobotsTxt.aspx", false));
+            HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/RobotsTxtHandler.ashx", "EPiRobots.Resources.RobotsTxtHandler.ashx", false));
+            HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/AdminManageRobotsTxt.aspx", "EPiRobots.Resources.Admin.AdminManageRobotsTxt.aspx", false));
         }
 
         #endregion Static methods
+
     }
 }
