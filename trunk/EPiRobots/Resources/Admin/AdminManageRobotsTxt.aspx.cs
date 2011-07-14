@@ -9,6 +9,7 @@ using EPiServer.UI;
 using EPiServer.Core;
 using EPiServer.Framework.Configuration;
 using EPiRobots.Services;
+using EPiServer.Security;
 //using EPiFramework = EPiServer.Framework.Configuration;
 //using EPiServer.Configuration;
 
@@ -37,6 +38,12 @@ namespace EPiRobots.Resources.Admin
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+
+            if (!PrincipalInfo.HasAdminAccess)
+            {
+                AccessDenied();
+                return;
+            }
 
             RobotsContentService srv = new RobotsContentService();
 
