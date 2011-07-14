@@ -1,7 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPiRobots", "..\EPiRobots\EPiRobots.csproj", "{1F66ED97-76A3-40DC-BF38-53C7FD2776EE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F66ED97-76A3-40DC-BF38-53C7FD2776EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F66ED97-76A3-40DC-BF38-53C7FD2776EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F66ED97-76A3-40DC-BF38-53C7FD2776EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F66ED97-76A3-40DC-BF38-53C7FD2776EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
