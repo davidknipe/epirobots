@@ -1,5 +1,0 @@
-C:\Projects\EPiRobots\EPiRobots\bin\Debug\EPiRobots.dll
-C:\Projects\EPiRobots\EPiRobots\bin\Debug\EPiRobots.pdb
-C:\Projects\EPiRobots\EPiRobots\obj\Debug\ResolveAssemblyReference.cache
-C:\Projects\EPiRobots\EPiRobots\obj\Debug\EPiRobots.dll
-C:\Projects\EPiRobots\EPiRobots\obj\Debug\EPiRobots.pdb
