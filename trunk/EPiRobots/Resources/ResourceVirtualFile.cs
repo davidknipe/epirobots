@@ -9,11 +9,10 @@
     /// </summary>
     internal class ResourceVirtualFile : VirtualFile
     {
-
         #region Members
 
-        private readonly string _resourceName;
-        private readonly bool _physicalResource;
+        private readonly string resourceName;
+        private readonly bool physicalResource;
 
         #endregion Members
 
@@ -27,8 +26,8 @@
         /// <param name="physicalResource">if set to <c>true</c> [physical resource].</param>
         public ResourceVirtualFile(string virtualPath, string resourceName, bool physicalResource) : base(virtualPath)
         {
-            _resourceName = resourceName;
-            _physicalResource = physicalResource;
+            this.resourceName = resourceName;
+            this.physicalResource = physicalResource;
         }
 
         #endregion Constructor
@@ -41,9 +40,9 @@
         /// <returns>The resource stream</returns>
         public override Stream Open()
         {
-            return !_physicalResource
-                       ? Assembly.GetExecutingAssembly().GetManifestResourceStream(_resourceName)
-                       : File.OpenRead(_resourceName);
+            return !this.physicalResource
+                       ? Assembly.GetExecutingAssembly().GetManifestResourceStream(this.resourceName)
+                       : File.OpenRead(this.resourceName);
         }
 
         #endregion Methods

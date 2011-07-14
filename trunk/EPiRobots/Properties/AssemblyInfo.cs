@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("EPiRobotsTxt")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A simple robots.txt module for delivering and editing robots.txt content")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("EPiRobotsTxt")]

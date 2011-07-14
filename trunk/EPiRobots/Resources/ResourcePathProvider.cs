@@ -9,12 +9,11 @@
     /// </summary>
     internal class ResourcePathProvider : VirtualPathProvider
     {
-
         #region Members
 
-        private readonly string _virtualPath;
-        private readonly string _resourceName;
-        private readonly bool _physicalResource;
+        private readonly string virtualPath;
+        private readonly string resourceName;
+        private readonly bool physicalResource;
 
         #endregion Members
 
@@ -28,9 +27,9 @@
         /// <param name="physicalResource">True if physical resource, otherwise false</param>
         public ResourcePathProvider(string virtualPath, string resourceName, bool physicalResource)
         {
-            _virtualPath = virtualPath;
-            _resourceName = resourceName;
-            _physicalResource = physicalResource;
+            this.virtualPath = virtualPath;
+            this.resourceName = resourceName;
+            this.physicalResource = physicalResource;
         }
 
         #endregion Constructor
@@ -44,7 +43,7 @@
         /// <returns>True if the file exists, otherwise false</returns>
         public override bool FileExists(string virtualPath)
         {
-             return String.Compare(virtualPath, _virtualPath, true) == 0 || Previous.FileExists(virtualPath);
+             return string.Compare(virtualPath, virtualPath, true) == 0 || Previous.FileExists(virtualPath);
         }
 
         /// <summary>
@@ -54,10 +53,9 @@
         /// <returns>Virtual file</returns>
         public override VirtualFile GetFile(string virtualPath)
         {
-            return String.Compare(virtualPath, _virtualPath, true) == 0 ? new ResourceVirtualFile(_virtualPath, _resourceName, _physicalResource) : Previous.GetFile(virtualPath);
+            return string.Compare(this.virtualPath, this.virtualPath, true) == 0 ? new ResourceVirtualFile(this.virtualPath, this.resourceName, this.physicalResource) : Previous.GetFile(this.virtualPath);
         }
 
         #endregion Methods
-
     }
 }

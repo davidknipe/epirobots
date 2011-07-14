@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EPiServer.Data.Dynamic;
-
-namespace EPiRobots
+﻿namespace EPiRobots
 {
-
-    // http://sdk.episerver.com/library/cms6.1/html/T_EPiServer_Enterprise_VisitorGroupTransferDataHandler.htm
-
+    using EPiServer.Data.Dynamic;
 
     [EPiServerDataStore(AutomaticallyCreateStore = true)]
     public class RobotsTxtData

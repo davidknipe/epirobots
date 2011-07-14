@@ -10,7 +10,6 @@
     /// </summary>
     internal class RegisterResources : PlugInAttribute
     {
-
         #region Static methods
 
         /// <summary>
@@ -34,6 +33,5 @@
         }
 
         #endregion Static methods
-
     }
 }
