@@ -1,0 +1,5 @@
+C:\Projects\EPiAnalytics\EPiRobotsTxt\EPiRobotsTxt\bin\Debug\EPiRobotsTxt.dll
+C:\Projects\EPiAnalytics\EPiRobotsTxt\EPiRobotsTxt\bin\Debug\EPiRobotsTxt.pdb
+C:\Projects\EPiAnalytics\EPiRobotsTxt\EPiRobotsTxt\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\EPiAnalytics\EPiRobotsTxt\EPiRobotsTxt\obj\Debug\EPiRobotsTxt.dll
+C:\Projects\EPiAnalytics\EPiRobotsTxt\EPiRobotsTxt\obj\Debug\EPiRobotsTxt.pdb
