@@ -19,7 +19,7 @@ namespace EPiRobots.Resources.Admin
         Area = PlugInArea.AdminMenu,
         DisplayName = "Manage robots.txt content",
         Description = "Tool to manage the robots.txt",
-        Url = "~/AdminManageRobotsTxt.aspx"
+        Url = "~/util/AdminManageRobotsTxt.aspx"
     )]
     public class AdminManageRobotsTxt : SystemPageBase
     {

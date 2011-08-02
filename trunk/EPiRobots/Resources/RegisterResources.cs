@@ -30,7 +30,7 @@
                 return;
 
             HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/RobotsTxtHandler.ashx", "EPiRobots.Resources.RobotsTxtHandler.ashx", false));
-            HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/AdminManageRobotsTxt.aspx", "EPiRobots.Resources.Admin.AdminManageRobotsTxt.aspx", false));
+            HostingEnvironment.RegisterVirtualPathProvider(new ResourcePathProvider("/util/AdminManageRobotsTxt.aspx", "EPiRobots.Resources.Admin.AdminManageRobotsTxt.aspx", false));
         }
 
         #endregion Static methods
